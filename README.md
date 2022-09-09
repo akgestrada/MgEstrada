@@ -1,2 +1,2 @@
 # MgEstrada
-Magnesium Q1 Project
+Magnesium Project
