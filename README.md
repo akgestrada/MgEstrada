@@ -1,15 +1,21 @@
 # MgEstrada
 Magnesium Project
 
-#Website Details
+## I-Pick-It
 
-This website is used to help users guide what devices they should get with a specific use or budget.
+This website is used to help you pick your next phone.
 
-##What Device Should I get?
-1. Phones
-2. Tablets
-3. Personal Computers
+What phone should I get 
+- I don't know what I want!
+- Camera
+- Battery Life
+- Performance (Gaming/Productivity)
+- Limited Budget
+- Unlimited Budget
+- Design
+- Best Overall
+- Best Price-Performance Ratio
 
-##Add-ons (For Q2)
-4. Accessories
-5. Useful Programs
+For Quarter 2
+- Accessories
+- Useful/Fun Applications/Add-ons
