@@ -21,11 +21,6 @@ This website is used to help you pick your next phone/laptop(for second quarter)
     if you need to make more specific comparisons, you can use this. it shows why it is good/bad. you can change the settings to show more technical parts
     <br>
     
-- Phone | Specifics
-    <br>
-    shows all the details in the comparison page, if not more. it also shows the references used
-    <br>
-    
     <br>
     
 ### For Q2
@@ -37,9 +32,4 @@ This website is used to help you pick your next phone/laptop(for second quarter)
 - Laptop | Comparison
     <br>
     if you need to make more specific comparisons, you can use this. it shows why it is good/bad. you can change the settings to show more technical parts
-    <br>
-    
-- Laptop | Specifics
-    <br>
-    shows all the details in the comparison page, if not more. it also shows the references used
     <br>
