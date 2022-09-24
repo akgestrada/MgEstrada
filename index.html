@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="head">
+        <nav class="head1">
+            <ul class="head2">
+                <li class="head3"><a class="headlogo" href="#">I - Pick  - It</a></li>
+                <li class="head3" style="width: 7em;"></li>
+                <li class="head3"><a class="head4" href="#">Choose</a></li>
+                <li class="head3"><a class="head4" href="#">Compare</a></li>
+                <li class="head3"><a class="head4" href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/IPhone 14 Pro Max.png"></div>
+            <div class="swiper-slide"><img src="./images/S22 Ultra.png"></div>
+          </div> 
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+        });  
+    </script>
+</body>
+</html>
