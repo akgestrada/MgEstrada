@@ -1,44 +1,92 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-Pick-It</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
-    <div class="head">
-        <nav class="head1">
-            <ul class="head2">
-                <li class="head3"><a class="headlogo" href="#">I - Pick  - It</a></li>
-                <li class="head3" style="width: 7em;"></li>
-                <li class="head3"><a class="head4" href="#">Choose</a></li>
-                <li class="head3"><a class="head4" href="#">Compare</a></li>
-                <li class="head3"><a class="head4" href="#">About Us</a></li>
-            </ul>
+    <section class="banner">
+        
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">CHOOSE</a></li>
+                    <li><a href="#">COMPARE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-    </div>
-
-
-    <div class="container">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/IPhone 14 Pro Max.png"></div>
-            <div class="swiper-slide"><img src="./images/S22 Ultra.png"></div>
-          </div> 
+        
+        <div class="text-box">
+            <h1>I-Pick-It</h1>
+            <p>Choosing your next devices should not be this complicated<br>So we made it simpler</p>
+            <a href="#" class="hero-btn">Start Choosing</a>
         </div>
-    </div>
+    </section>
+    
+<!---------- why ----------->
+    
+    <section class="why">
+        <h1>Why we do this.</h1>
+        <p>We study, you choose.</p>
+        <div class="row">
+            <div class="why-col">
+                <h3>Time</h3>
+                <p>Researching for you next device can take a ton of time. Instead of doing the research yourself, we compile important information to help you choose.</p>
+            </div>
+            <div class="why-col">
+                <h3>Avoiding Scams</h3>
+                <p>Although most of these are not fully a scam, some of the companies don't tell everything that goes inside your phone.</p>
+            </div>
+            <div class="why-col">
+                <h3>Convenience</h3>
+                <p>We compile important information so you could choose the best fit phone for you.</p>
+            </div>
+        </div>
+    </section>
+    
+<!---------- popular ---------->
+    
+    <section class="popular">
+        <h1>Popular Phones</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="row">
+                <div class="popular-col">
+                    <img src="./images/Samsung S22 Ultra.png">
+                    <div class="layer">
+                        <h3>Best Camera</h3>
+                    </div>
+                </div>
+                <div class="popular-col">
+                    <img src="./images/ROG Phone 6 Pro.png">
+                    <div class="layer">
+                        <h3>Best Performance</h3>
+                    </div>
+                </div>
+                <div class="popular-col">
+                    <img src="./images/IPhone 14 Pro.png">
+                    <div class="layer">
+                        <h3>Best Battery Life</h3>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+<!-------- footer ---------->
 
-
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-    <script>
-        const swiper = new Swiper('.swiper', {
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-        });  
-    </script>
+<section class="footer">
+        <h4>About Us</h4>
+        <p>We are I-Pick-It. We try to help people to choose their next devices. We aim to reduce the number<br> of people falling for scams, more specifically, wrong advertisments.</p>
+        <div class="icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+</section>     
 </body>
 </html>
