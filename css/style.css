@@ -703,3 +703,37 @@ input[type="radio"]{
 .description:hover{
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
+
+
+.test{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: auto;
+    overflow: hidden;
+    z-index: -2;
+    position: relative;
+}
+
+.test-cover{
+    /*box-sizing: border-box;
+    width: 100vW;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    background: transparent;*/
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: -100vh;
+}
+
+.vid{
+    margin-left: -10%;
+}
