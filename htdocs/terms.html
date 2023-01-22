@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="Estrada, Aldrei Kayl G.">
+        <meta name="description" content="I-Pick-It - a website about helping you pick your next phone.">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="revised" content="Oct 29, 2022">
+
+        <title>Buying Guide</title>
+        
+        <link rel="stylesheet" href="../css/terms.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="../images/icon.ico" type="image/gif">  
+    </head>
+    <body>
+        <!------header and logo------>
+        <header class="sub-header">
+            <h1>Tech Terms</h1>
+            <p>Terms you might not understand.</p>
+            <img src="../images/logo.png" class="logo">
+        </header>
+        
+
+        <!---------------menu/navigation------------------->
+        <img src="../images/menu.png" id="menuIcon">
+        <div class="menu-box" id="menuBox">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./best.html">Our Picks</a></li>
+                <li><a href="./comparison.html">Pros/Cons</a></li>
+                <li><a href="./how-to.html">How-To-Pick</a></li>
+                <li><a href="./terms.html">Tech Terms</a></li>
+            </ul>
+        </div>
+        <script>
+            let menuBox = document.getElementById("menuBox");
+            let menuIcon = document.getElementById("menuIcon");
+            
+            menuIcon.onclick = function(){
+                menuBox.classList.toggle("open-menu");
+            
+                if(menuBox.classList.contains("open-menu")){
+                    menuIcon.src = "../images/close.png";
+                }
+                else{
+                    menuIcon.src = "../images/menu.png";
+                }
+            }
+        </script>
+
+        <div class="step">
+            <div class="step-container">
+                <div class="step-box">
+                    <h3>SoC</h3>
+                    <p>SoC is a "System on a Chip" based on an Integrated Circuit (IC) that houses all computing components on a single chip. This is the heart of your phone and the type of SoC will decide your smartphone’s performance. However, hardware on its own is nothing without an optimised software. The best phones have a balanced combination of both hardware and software.</p>
+                </div>
+                <div class="step-box">
+                    <h3>RAM and ROM</h3>
+                    <p>RAM is Random Access Memory and ROM is Read-Only Memory. In simple terms, RAM is the memory your phone stores for frequently used apps to provide a faster response when needed. ROM is the internal storage which houses the smartphone’s operating system. While a part of ROM is locked for system use, the rest of it is available to the user for installing apps and storing data.</p>
+                </div>
+                <div class="step-box">
+                    <h3>CPU and GPU</h3>
+                    <p>The CPU, or Central Processing Unit, handles all the major complex calculations like multitasking and app functionality. GPU, or Graphic Processing Unit, handles all the animations, video playback and gaming on your smartphone. Better processors will result in faster overall operations.</p>
+                </div>
+                <div class="step-box">
+                    <h3>Network</h3>
+                    <p>The G in 2G, 3G, 4G and upcoming 5G stands for the Generation of networks. Each generation is an upgrade with added functionality, better coverage and improved data speeds. LTE is Long Term Evolution designed to work on 4G networks and beyond. It features better data speeds as compared to its predecessor, GSM or Global system for Mobiles. Both these standards were born in Europe and are accepted worldwide.</p>
+                </div>
+                <div class="step-box">
+                    <h3>VoLTE</h3>
+                    <p>VoLTE stands for Voice over Long Term Evolution. Apart from increased data speeds, LTE is also used to make and receive calls using the internet.</p>
+                </div>
+                <div class="step-box">
+                    <h3>NFC</h3>
+                    <p>Near Field Communication or NFC allows devices to talk to each other and NFC tags. It’s a method of wireless data transfer between two devices which are in close proximity with each other. NFC evolved from Radio Frequency Identification (RFID) tech and operates as one part of a wireless link.</p>
+                </div>
+                <div class="step-box">
+                    <h3>Megapixels and UltraPixels</h3>
+                    <p>Megapixel is a unit of graphic resolution to measure a million pixels, mostly in camera lenses. More pixels result in a larger image resolution. UltraPixels is more like a marketing term invented by HTC to denote that larger sized pixels on a smaller area will result in a sharper image. UltraPixel-based images are smaller in resolution.</p>
+                </div>
+                <div class="step-box">
+                    <h3>AMOLED, OLED and IPS</h3>
+                    <p>AMOLED is active-matrix organic light-emitting diode and OLED is organic light-emitting diodes, while IPS is In-plane switching. All of these are terms for display technologies. While AMOLED and OLED are LED Display technologies, IPS is a screen technology for LCDs or Liquid Crystal Displays. Since AMOLEDs and OLEDs can control light from each diode, they are popular for their deep blacks, high contrast and punchy colours. IPS technology focuses on vibrancy and contrast.</p>
+                </div>
+                <div class="step-box">
+                    <h3>Battery</h3>
+                    <p>Li-ion or lithium-ion is a type of rechargeable battery used in most gadgets. They are widely used for their high energy density, tiny memory effect (phenomena causing batteries to hold less charge) and low self-discharge. mAh or milliampere-hour is a number of milliamps of power that a battery can deliver for one hour.</p>
+                </div>
+                <div class="step-box">
+                    <h3>Ports</h3>
+                    <p>Micro-USB is the standard port available on most smartphone and gadgets. It is based on USB 2.0, and in rare cases, USB 3.0. It is therefore bound to speeds averaging from 480 Mbps to 5 Gbps. USB Type-C is an upgrade to all the USB ports featuring reversible use and faster data transfer up to 10 Gbps along with faster-charging capabilities. Lighting Port is an Apple patented port used by their products. Apple too seems to turn towards USB Type-C ports for its universal acceptance in coming ages. <br> <br>The 3.5mm Headphone jack is one of the oldest analogue ports used in today’s phones. It is designed for audio output and input though not bound to this very functionality.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-------- footer ---------->
+        <footer class="footer">
+            <h4>About Us</h4>
+            <p>We are I-Pick-It. We try to help people to choose their next devices.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/mrwhosetheboss?_rdr=p"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/Mrwhosetheboss"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mrwhosetheboss/"><i class="fa fa-instagram"></i></a>
+            </div>
+        </footer>     
+    </body>
+</html>

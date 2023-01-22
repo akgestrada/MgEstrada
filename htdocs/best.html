@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="Estrada, Aldrei Kayl G.">
+        <meta name="description" content="I-Pick-It - a website about helping you pick your next phone.">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="revised" content="Oct 29, 2022">
+
+        <title>Our Picks</title>
+        
+        <link rel="stylesheet" href="../css/best.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="../images/icon.ico" type="image/gif">  
+    </head>
+    <body>
+        <!------header and logo------>
+        <header class="banner"> </header>
+        <img src="../images/logo.png" class="logo">
+
+        <div class="text-box">
+            <h1>Our Picks</h1>
+            <p>What we recommend, from best to worst (still great).</p>
+        </div>
+
+        <!---------------menu/navigation------------------->
+        <img src="../images/menu.png" id="menuIcon">
+        <div class="menu-box" id="menuBox">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./best.html">Our Picks</a></li>
+                <li><a href="./comparison.html">Pros/Cons</a></li>
+                <li><a href="./how-to.html">How-To-Pick</a></li>
+                <li><a href="./terms.html">Tech Terms</a></li>
+            </ul>
+        </div>
+        <script>
+            let menuBox = document.getElementById("menuBox");
+            let menuIcon = document.getElementById("menuIcon");
+            
+            menuIcon.onclick = function(){
+                menuBox.classList.toggle("open-menu");
+            
+                if(menuBox.classList.contains("open-menu")){
+                    menuIcon.src = "../images/close.png";
+                }
+                else{
+                    menuIcon.src = "../images/menu.png";
+                }
+            }
+        </script>
+
+        <div class="container">
+            <h2 class="name">IPhone 14 Pro Max</h2>
+            <h3 class="price">Php 77,000</h3>
+            <img class="image" src="../images/IPhone 14 Pro.png" alt="">
+            <p class="text">
+                The best iPhone ever comes with a wide range of advancements, and even if you don't consider any of them groundbreaking or relevant to your usage, they're there and add up. The brightest screen by a country mile, now with AoD, a pill for the notch-ache, a camera system with all-around improvements and great full-res images, and emergency hardware/software features - that's the new stuff. <br> <br>These come on top of Pro Max staples like great battery life, superb speakers, and premium and durable build quality. The most potent chipset in the business and at least 5 years of support for the software you've known for ages (and likely love and hate at the same time) are other classic arguments for the iPhone, Pro Max included. <br> <br>The price increase in RoW markets (that is, outside of the US) is a tough pill to swallow on at least two levels. There's the absolute monetary dimension of the extra cash leaving your pocket, and then there's the sense that you're paying for part of the US customers' iPhones - we're not sure which is the more bitter sentiment. <br> <br>But in any case, the iPhone 14 Pro Max is undoubtedly a wonderful handset with few faults. And where you can see possible negatives, those come with the territory and aren't exclusive to this specific generation or size. So, ultimately, if it's your time to upgrade and the price is right for you, you can't go wrong with this one.
+            </p>
+        </div>
+
+        <div class="container">
+            <h2 class="name">Samsung S22 Ultra</h2>
+            <h3 class="price">Php 69,000</h3>
+            <img class="image" src="../images/Samsung S22 Ultra.png" alt="">
+            <p class="text">
+                The Galaxy S22 Ultra is in such a market segment that the concept of value doesn't necessarily apply to it and affect purchasing decisions. So the Php 69,000 price is little more than just a number. <br> <br>But the Ultra does, in fact, provide a lot of value. An upmarket phone with a stylus is essentially a Samsung-exclusive offering - competing efforts from Apple, Google, Xiaomi, Oppo, or Huawei simply do not exist. This is the latest and most powerful one and it can carry that S Pen inside it unlike the Fold or last year's Ultra, so it's unique even in Samsung's present realm too. <br> <br>It's not as clear cut when it comes to the camera, where we could come up with potential alternatives - as good, or maybe a touch superior in this or that. But there's no denying that the S22 Ultra is a superbly capable all-rounded cameraphone, easily Samsung's best yet. <br> <br>It's properly good when it comes to the fundamentals too, unsurprisingly. The brightest smartphone display we've seen excels in all other areas as well, battery life is about as solid as you can expect from a modern-day flagship, the software is refined and feature-rich, the design is understated, yet recognizable and stylish. <br> <br>The Galaxy S22 Ultra may not have 'Note' in its name, but deep inside we know it is one, probably the last of its kind. From our Note-loving hearts and level reviewer heads alike, it's an easy recommendation.
+            </p>
+        </div>
+
+        <div class="container">
+            <h2 class="name">Google Pixel 7</h2>
+            <h3 class="price">Php 29,000</h3>
+            <img class="image" src="../images/Google Pixel 7 Pro.png" alt="">
+            <p class="text">
+                The Pixel 7 is definitely one of the best options in the Php 30,000 - 35,000 range. It has a flagship-worthy performance, although a bit lower than you'd expect; it's one of the best phones for mobile photography, if not the best-in-class, and it has bright OLED, great-sounding stereo speakers, long battery life (with the size category in mind) and exceptional software ensuring timely updates and smart features. <br> <br>Sadly, there are a few caveats to consider here. There's no true telephoto camera; the display is limited to 90Hz; some of the most advanced software features are region-dependant, and the charging solution is just way too outdated for a 2022 flagship release. <br> <br>All things considered, the Pixel 7, along with the Pixel 7 Pro, are the best smartphones from Google, and that means something in this context. We've seen Google messing up smartphone releases more than once. Luckily, the Pixel 7 isn't one of those times. <br> <br>So, do we recommend it? Yes, for sure! At that price, the Pixel 7 offers a unique combination of ultra-premium camera experience, long battery life and AI-based features that make it the smartest kid on the block.
+            </p>
+        </div>
+
+        <div class="container">
+            <h2 class="name">Vivo X80 Pro</h2>
+            <h3 class="price">Php 60,000</h3>
+            <img class="image" src="../images/Vivo X80 Pro.png" alt="">
+            <p class="text">
+                The X80 Pro is the newest in a lineup of vivos with awesome camera hardware that takes wonderful pictures and captures nice videos. It has an excellent display, charges quickly to make up for what is mostly average battery life, its stereo speakers are among the better ones, while the large ultrasonic fingerprint reader is pure joy to use. A design that turns heads is also a plus in our book, even if that fancy back may be lacking in grip. <br> <br>The missteps we can point out in the X80 Pro's performance are in the... performance department, where we observed significant heat buildup and thermal throttling. Then again, the limited display refresh rate in gaming should help ensure that doesn't happen too often - turning a con into a pro. <br> <br>In any case, it's the quad camera on the vivo X80 Pro's back that is the star of the show. Indeed, a cameraphone as thoroughly great as this one is hard to find, maybe even impossible, depending on your particular priorities. Perhaps a Xiaomi 12 Ultra will be better, but that doesn't exist yet, while the 11 Ultra is nowhere to be seen anymore, and perhaps the Galaxy's 10x zoom may be your gamechanger. Still, the X80 Pro is an easy recommendation if you're out for an all-round superb camera experience. It doesn't hurt that it's a solid phone outside of that too.
+            </p>
+        </div>
+
+        <div class="container">
+            <h2 class="name">Google Pixel 6a</h2>
+            <h3 class="price">Php 21,000</h3>
+            <img class="image" src="../images/Google Pixel 6a.png" alt="">
+            <p class="text">
+                Google may have finally mastered the A Series formula with the Pixel 6a. It managed yet again to capture the essence of the Pixel flagships into a more affordable phone that does not water down the overall experience too much. The 60Hz display and leisurly charging speeds count against it, but the overall execution of the 6a is great for its price. <br> <br>Shipping the 6a with a Google Tensor versus last year's Snapdragon 765G and keeping the same Php 20,000 price point makes it a great offer. Camera performance remains solid, software and performance are polished and battery life is respectable. Plus, Google addressed performance throttling issues with Google Tensor on the Pixel 6a. <br> <br>It's arguably Google's most competitively positioned smartphone in a good while and one we can wholeheartedly recommend. The obvious asterisk here is that things stand differently in India where consumers have a huge choice in this price segment and the Pixel 6a's higher price makes it far less tempting.
+        </div>
+
+        <div class="container">
+            <h2 class="name">Sony Xperia 1 IV</h2>
+            <h3 class="price">Php 62,000</h3>
+            <img class="image" src="../images/Sony Xperia 1 IV.png" alt="">
+            <p class="text">
+                The Sony Xperia 1 IV has a lot of reasons to be liked - the 4K OLED display, the latest Snapdragon chipset, the front-facing stereo speakers, the large battery, and most importantly, its professional-oriented camera kit. <br> <br>And the Xperia 1 IV excels in many aspects - it has a superb HDR10-capable display, the battery life is notably improved over the previous versions, and the speakers are more bassy, too. And the camera seems better - Sony offers excellent processing across all cameras, and the daylight photo and quality is one of the best you can have. <br> <br>Let's not forget the Cinema Pro and the Video Pro apps, which are intended for prosumers who want to make high-quality films on the go. The hardware and the software are all there. <br> <br>But the Xperia 1 IV is not without issues, unfortunately. First is the heavy throttling. The phone reaches its critical temperature quite fast, and two things happen immediately - the screen refresh rate immediately drops to 60fps and the processing power of CPU and GPU is halved. While both matter, the chipset is powerful enough that you may not notice the lack of full power, but you can see and feel the slower display. <br> <br>Worse, this happens when shooting with any camera app for a while. The phone may get incredibly hot and will eventually kill the camera app if needed. The app suspension did not happen to us, but we got the special hot icon quite a few times. <br> <br>Then there is the overcomplicated way of handling the video capturing by scattering various shooting modes across the three apps. And not having Night Mode for the sake of its unrealistic look is no excuse, sorry, Sony. <br> <br>Despite all these flaws, we found the Sony Xperia 1 IV an appealing smartphone with great potential and skills, especially when in the hands of camera professionals. We believe Sony will work out some of the throttling issues as this is a pre-production phone, and every aspect of it is worth it. <br> <br>We really liked this Xperia in spite of its issues, and we see no reason why not to get one. If you find it complicated or overengineered or cannot forgive some of its shortcomings, look elsewhere.
+        </div>
+
+        <!-------- footer ---------->
+        <footer class="footer">
+            <h4>About Us</h4>
+            <p>We are I-Pick-It. We try to help people to choose their next devices.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/mrwhosetheboss?_rdr=p"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/Mrwhosetheboss"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mrwhosetheboss/"><i class="fa fa-instagram"></i></a>
+            </div>
+        </footer>        
+    </body>
+</html>

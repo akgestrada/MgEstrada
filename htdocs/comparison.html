@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="Estrada, Aldrei Kayl G.">
+        <meta name="description" content="I-Pick-It - a website about helping you pick your next phone.">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="revised" content="Oct 29, 2022">
+
+        <title>Pros and Cons</title>
+        
+        <link rel="stylesheet" href="../css/comparison.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="../images/icon.ico" type="image/gif">  
+    </head>
+    <body>
+        <!------header and logo------>
+        <header class="banner"></header>
+        <img src="../images/logo.png" class="logo">
+
+        <div class="text-box">
+            <h1>Pros and Cons</h1>
+            <p>Everything you need to know.</p>
+        </div>
+
+        <!---------------menu/navigation------------------->
+        <img src="../images/menu.png" id="menuIcon">
+        <div class="menu-box" id="menuBox">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./best.html">Our Picks</a></li>
+                <li><a href="./comparison.html">Pros/Cons</a></li>
+                <li><a href="./how-to.html">How-To-Pick</a></li>
+                <li><a href="./terms.html">Tech Terms</a></li>
+            </ul>
+        </div>
+        <script>
+            let menuBox = document.getElementById("menuBox");
+            let menuIcon = document.getElementById("menuIcon");
+            
+            menuIcon.onclick = function(){
+                menuBox.classList.toggle("open-menu");
+            
+                if(menuBox.classList.contains("open-menu")){
+                    menuIcon.src = "../images/close.png";
+                }
+                else{
+                    menuIcon.src = "../images/menu.png";
+                }
+            }
+        </script>
+
+        <!------pros and consss------>
+        <div class="set">
+            <div class="container">
+                <h2 class="name">Vivo X80 Pro</h2>
+                <img src="../images/Vivo X80 Pro.png" alt="" class="image">
+                <h3 class="price">Php 60,000</h3>
+                <div class="proscons"> <h3>Pros:</h3>
+                    <ul>
+                        <li>Standout design.</li>
+                        <li>Superb fingerprint reader.</li>
+                        <li>Great display - high-res, super-bright, high refresh rate, can be color-accurate.</li>
+                        <li>Speedy charging.</li>
+                        <li>Loud stereo speakers, nice-sounding output too.</li>
+                        <li>One of the most complete camera systems on the market with great output across all scenarios.</li>
+                    </ul> 
+                </div>
+                <div class="proscons"> <h3>Cons:</h3>
+                    <ul>
+                        <li>Slippery as a phone can be.</li>
+                        <li>No high refresh rate in gaming.</li>
+                        <li>Prone to severe overheating and heavy throttling.</li>
+                    </ul> 
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="name">Google Pixel 6a</h2>
+                <img src="../images/Google Pixel 6a.png" alt="" class="image">
+                <h3 class="price">Php 21,000</h3>
+                <div class="proscons"> <h3>Pros:</h3>
+                    <ul>
+                        <li>Attractive, compact design that looks more expensive than it is.</li>
+                        <li>Bright and accurate AMOLED display.</li>
+                        <li>Good sustained performance from the Google Tensor this time.</li>
+                        <li>Extended firmware update support; Voice Typing and on-device language processing is excellent.</li>
+                        <li>Great all-around camera.</li>
+                    </ul> 
+                </div>
+                <div class="proscons"> <h3>Cons:</h3>
+                    <ul>
+                        <li>Isolated instances of a fingerprint security flaw are not acceptable.</li>
+                        <li>60Hz refresh rate is not competitive for this price range.</li>
+                        <li>Headphone jack is gone.</li>
+                        <li>No charger included in the box.</li>
+                    </ul> 
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="name">Samsung S22 Ultra</h2>
+                <img src="../images/Samsung S22 Ultra.png" alt="" class="image">
+                <h3 class="price">Php 69,000</h3>
+                <div class="proscons"> <h3>Pros:</h3>
+                    <ul>
+                        <li>Traditional Note design with modern premium touches - big display, boxy shape, curved edges, unique camera styling.</li>
+                        <li>S Pen has wide-ranging functionality for work and play, is virtually without competition.</li>
+                        <li>Display is simply spectacular.</li>
+                        <li>Battery life is pretty great, all things considered.</li>
+                        <li>Ultra-grade camera system is one of the best on the market, zooming capability is hard to rival.</li>
+                    </ul> 
+                </div>
+                <div class="proscons"> <h3>Cons:</h3>
+                    <ul>
+                        <li>S Pen eats up internal volume and adds weight, which isn't ideal if you're in for the S Ultra and not the Note Ultra.</li>
+                        <li>Poorly communicated fast charging capability (actually quite speedy in the Apple-Google-Samsung universe, but others are way faster).</li>
+                        <li>Isn't called a Note and that makes us sad.</li>
+                    </ul> 
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="name">Sony Xperia 1 IV</h2>
+                <img src="../images/Sony Xperia 1 IV.png" alt="" class="image">
+                <h3 class="price">Php 62,000</h3>
+                <div class="proscons"> <h3>Pros:</h3>
+                    <ul>
+                        <li>Lovely matte design, IP65/IP68 rating.</li>
+                        <li>Excellent 4K OLED screen with 120Hz refresh, HDR10 without a notch or punch hole.</li>
+                        <li>Dependable battery life.</li>
+                        <li>Outstanding stereo speakers quality.</li>
+                        <li>Great daylight photo and video quality (incl. sound).</li>
+                        <li>Excellent low-light photos from the main camera.</li>
+                        <li>Top-notch selfies.</li>
+                        <li>No-nonsense launcher based on Android 12.</li>
+                        <li>3.5mm jack, microSD, NFC, 5G.</li>
+                    </ul> 
+                </div>
+                <div class="proscons"> <h3>Cons:</h3>
+                    <ul>
+                        <li>The screen auto switches to 4K only in certain limited cases; no dynamic refresh rate either.</li>
+                        <li>No charger in the box, not even a cable.</li>
+                        <li>No Night Mode - UW and Tele cameras stand to benefit a lot from it.</li>
+                        <li>Easily overheats under load (even when using the camera), causing heavy performance throttling and even refresh rate throttling.</li>
+                    </ul> 
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="name">Google Pixel 7</h2>
+                <img src="../images/Google Pixel 7 Pro.png" alt="" class="image">
+                <h3 class="price">Php 29,000</h3>
+                <div class="proscons"> <h3>Pros:</h3>
+                    <ul>
+                        <li>Compact and premium build, easy to handle, unique-looking design, dust- and water-resistant.</li>
+                        <li>Sharp, bright, color-accurate display.</li>
+                        <li>Good battery life considering the phone's size.</li>
+                        <li>Android from the source, exclusive feature set, unrivaled perception of smoothness on this side of the OS divide.</li>
+                        <li>Superb stereo speakers.</li>
+                        <li>Overall, great camera quality with an unmatched character that has a loyal following.</li>
+                    </ul> 
+                </div>
+                <div class="proscons"> <h3>Cons:</h3>
+                    <ul>
+                        <li>The display is just 90Hz as opposed to competitors pushing beyond 120Hz.</li>
+                        <li>Very slow charging.</li>
+                        <li>Certain software and hardware features are regionally limited - 5G, VoLTE, and much of the onboard AI stuff (though admittedly, so is the phone's availability, to begin with).</li>
+                        <li>Ultrawide camera is underwhelming in low light.</li>
+                        <li>Selfies rarely come out tack sharp.</li>
+                    </ul> 
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="name">iPhone 14 Pro Max</h2>
+                <img src="../images/IPhone 14 Pro.png" alt="" class="image">
+                <h3 class="price">Php 77,000</h3>
+                <div class="proscons"> <h3>Pros:</h3>
+                    <ul>
+                        <li>Class-leading design, water resistance and durability.</li>
+                        <li>Class-leading OLED screen, 120Hz, AOD, Dolby Vision, 2000nits.</li>
+                        <li>Class-leading performance, very good stability.</li>
+                        <li>Class-leading battery life.</li>
+                        <li>Outstanding photo and video quality across all four cameras.</li>
+                        <li>Best video stabilization available on a smartphone, high-quality action mode.</li>
+                        <li>Superb stereo speakers.</li>
+                        <li>Every iPhone comes with at least five years of iOS updates.</li>
+                    </ul> 
+                </div>
+                <div class="proscons"> <h3>Cons:</h3>
+                    <ul>
+                        <li>Dynamic Island is a love-it or hate-it affair.</li>
+                        <li>Bigger and heavier than most.</li>
+                        <li>No charger in the box, somewhat slow charging.</li>
+                        <li>Apple's iOS restrictions can be off-putting to newcomers to the ecosystem.</li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+
+
+        <!-------- footer ---------->
+        <footer class="footer">
+            <h4>About Us</h4>
+            <p>We are I-Pick-It. We try to help people to choose their next devices.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/mrwhosetheboss?_rdr=p"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/Mrwhosetheboss"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mrwhosetheboss/"><i class="fa fa-instagram"></i></a>
+            </div>
+        </footer>          
+    </body>
+</html>
