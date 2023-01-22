@@ -10,31 +10,44 @@
 
         <title>I-Pick-It</title>
 
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="./images/icon.ico" type="image/gif">  
+        <link rel="icon" href="./images/icon.ico" type="image/gif">
     </head>
     <body>
         <!--header and image-->
-        <section class="banner">
-            <nav>
-                <a href="index.html"><img src="./images/logo.png"></a>
-                <div class="nav-links" id="navLinks">  
-                    <ul>
-                        <li><a href="./htdocs/choose.html">PICKS</a></li>
-                        <li><a href="./htdocs/comparison.html">COMPARE</a></li>
-                        <li><a href="./htdocs/how-to.html">HOW-TO</a></li>
-                    </ul>
-                </div>
-            </nav>
-            
+        <header class="banner">
             <div class="text-box">
                 <h1>I-Pick-It</h1>
                 <p>Choosing your next devices should not be this complicated<br>So we made it simpler</p>
-                <a href="./htdocs/budget.html" class="hero-btn">Start Choosing</a>
             </div>
-        </section>
+        </header>
+
+            <img src="./images/menu.png" id="menuIcon">
+            <div class="menu-box" id="menuBox">
+                <ul>
+                    <li><a href="./htdocs/best.html">Our Picks</a></li>
+                    <li><a href="./htdocs/comparison.html">Pros/Cons</a></li>
+                    <li><a href="./htdocs/how-to.html">How-To-Pick</a></li>
+                    <li><a href="./htdocs/terms.html">Tech Terms</a></li>
+                </ul>
+            </div>
+            <script>
+            let menuBox = document.getElementById("menuBox");
+            let menuIcon = document.getElementById("menuIcon");
+            
+            menuIcon.onclick = function(){
+                menuBox.classList.toggle("open-menu");
+            
+                if(menuBox.classList.contains("open-menu")){
+                    menuIcon.src = "./images/close.png";
+                }
+                else{
+                    menuIcon.src = "./images/menu.png";
+                }
+            }
+            </script>   
 
         <!--showcase-->
         <div class="showcase">
@@ -66,14 +79,6 @@
 
                     <div class="showcase-box">
                         <div class="showcase-text">
-                            <h3>Poco X4 Pro</h3>
-                            <p>The Poco X4 Pro 5G is a good smartphone - it has adequate specs sheet and attractive pricing for 2022, all things considered. But the 2021 mid-range models are widely available and more affordable, and it just doesn't make sense buying it right now, not until a price cut is introduced or its competitors - retired. But what we know is that this Poco X4 Pro makes more sense than many of the recently launched Redmi Note 11 phones models.</p>
-                        </div>
-                        <img class="showcase-image" src="./images/Poco X4 Pro.png" alt="">
-                    </div>
-
-                    <div class="showcase-box">
-                        <div class="showcase-text">
                             <h3>Google Pixel 7</h3>
                             <p>The camera system is the single biggest Pixel 7 Pro selling point that comes to mind, and it brings some welcome improvements, even if a bit modest. Similarly challenging to put a number on is the software experience - benchmarks certainly don't do the 7 Pro any justice. But it's when getting to the numbers that the Pixel 7 Pro struggles to compete on quite the same level as a lot of the other big-name rivals. Battery life is markedly worse than on a current iPhone, and a Galaxy will likely get you better longevity too. Neither Apple nor Samsung are industry leaders in charging speed, but Google has become an industry... trailer? Two hours for a full charge can turn into an actual issue in day-to-day use, we reckon. And then, despite all the gushing over Pixel cameras, there's potential for improvement here or there as well.</p>
                         </div>
@@ -85,7 +90,6 @@
                     <img src="./images/Efficiency.png" class="showcase-pic" onclick="showReview()">
                     <img src="./images/Phone.png" class="showcase-pic active-pic" onclick="showReview()">
                     <img src="./images/Photos.png" class="showcase-pic" onclick="showReview()">
-                    <img src="./images/Budget.png" class="showcase-pic" onclick="showReview()">
                     <img src="./images/Value.png" class="showcase-pic" onclick="showReview()">
                 </div>
             </div>
@@ -119,10 +123,8 @@
             <p>Companies do their best to get as much sales as they can. From making misleading claims to stopping a reviewer from releasing a full review that will show its flaws, companies will do everything. This is not something only a few companies do. Even large ones like Samsung have been caught doing it. But with this guide, we aim to help people buy their phone smartly. At the end of the day, you should pick what you like, because you are going to be the one using it. Even if something is popular, if you don't like it, you can't just force yourself to like it, specially because it came from your hard earned money.</p>
         </div>
 
-        <div class="backtotop-container"><a href="#" class="backtotop">Back to Top</a></div>
-
         <!-------- footer ---------->
-        <section class="footer">
+        <footer class="footer">
                 <h4>About Us</h4>
                 <p>We are I-Pick-It. We try to help people to choose their next devices.</p>
                 <div class="icons">
@@ -130,6 +132,6 @@
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
                 </div>
-        </section>     
+        </footer>     
     </body>
 </html>
